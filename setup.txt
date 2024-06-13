@@ -23,7 +23,7 @@
 		ii. Click 'Generate new token';
 		iii. Select the necessary scopes and generate the token;
 		iv. Copy the token(Caution- you will not be able to see it again)
-	PAT for hello-world - "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"
+	PAT for hello-world - ""
 2. Update the remote URL using HTTPs:
 	Open terminal in your repo and set the remote URL with the token -
 		`git remote set-url origin https://<TOKEN>@github.com/username/repo.git
