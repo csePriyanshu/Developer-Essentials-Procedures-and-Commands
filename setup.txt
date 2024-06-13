@@ -2,9 +2,10 @@
 1. cd: change directory - `cd <directory-name>`
 2. pwd: present working directory - `pwd`
 3. ls: 'list' contents of current working directory - `ls`
-3. clear: clear all text in terminal window - `clear`
-4. touch: create a new file - `touch <filename.extension>`
-5. Write into a file:
+4. rm: remove/delete a file - `rm`
+5. clear: clear all text in terminal window - `clear`
+6. touch: create a new file - `touch <filename.extension>`
+7. Write into a file:
 	i. echo: use it to write single line - 
 		a. `echo "your content" > filename.txt`
 		b. `echo "additional content" >>filename.txt` //to append content instead of overwriting it.
