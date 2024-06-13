@@ -1,0 +1,48 @@
+#Some Gitbash(Unix-terminal) commands:
+1. cd: change directory - `cd <directory-name>`
+2. pwd: present working directory - `pwd`
+3. ls: 'list' contents of current working directory - `ls`
+3. clear: clear all text in terminal window - `clear`
+4. touch: create a new file - `touch <filename.extension>`
+5. Write into a file:
+	i. echo: use it to write single line - 
+		a. `echo "your content" > filename.txt`
+		b. `echo "additional content" >>filename.txt` //to append content instead of overwriting it.
+	ii. cat: use it to write multiple lines, after the command type your content and press 'ctrl+D' to save and exit -
+		a. `cat > filename.txt` //then write ur content and after ctrl+D
+		b. `cat >> filename.txt` //to append new items
+	iii. nano/vim: to open the file in text editor like 'nano' or 'vim' -
+		`nano <filename.txt>`
+	iv. You can display the content of the file using -
+		`cat <filename.txt>`
+
+#access your github account remotely
+1. Personal Access Token(PAT): use correct username and password.
+	Generate a Personal Access Token:
+		i. Go to 'Github Settings';
+		ii. Click 'Generate new token';
+		iii. Select the necessary scopes and generate the token;
+		iv. Copy the token(Caution- you will not be able to see it again)
+	PAT for hello-world - "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"
+2. Update the remote URL using HTTPs:
+	Open terminal in your repo and set the remote URL with the token -
+		`git remote set-url origin https://<TOKEN>@github.com/username/repo.git
+3. Use Git Credential Manager(GCM):
+	i. Install GCM, if not installed already.
+	ii. COnfigure Git to use GCM-
+		`git config --global credential.helper manager`
+	iii. Cache your credentials.
+4. Clear Cached Credentials
+	`git credential-cache exit` 
+5. SSH authentication (Alternative to HTTPs)
+	i. Generate a SSH key (if not already done)
+		`ssh-keygen -t -rsa -b 4096 -C "your_emai@example.com"`
+	ii. Add the SSH key to the ssh-agent:
+		`eval "$(ssh-agent -s)"
+		ssh-add ~/.ssh/id_rsa`
+	iii. Add the SSH key to your GitHub account:
+		a. Copy the SSH key to your clipboard - 
+			`cat ~/.ssh/id_rsa.pub`
+		b. Go to GitHub SSH and GPG keys settings and add a new SSH key.
+	iv. Update the remote URL to use SSH -
+		`git remote set-url origin git@github.com:username/repo.git`
