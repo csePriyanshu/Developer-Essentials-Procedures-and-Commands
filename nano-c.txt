@@ -1,0 +1,25 @@
+nano Commands
+ *Save File: Ctrl + O
+ *Exit nano: Ctrl + X
+ *Cut Text: Ctrl + K
+ *Paste Text: Ctrl + U
+ *Search: Ctrl + W
+ *Replace: Ctrl + \
+ *Mark Text: Ctrl + ^ (Ctrl + Shift + 6)
+ *Justify Text: Ctrl + J
+
+**Text Formatting**
+	(single star or underscore)*This is italic text* and _this is also italic_
+	(double star or underscore)**This is bold text** and __this is also bold__
+
+Insert ordered list:
+	1. First item
+	2. Second item
+	3. Third item
+
+Insert unordered list;
+	* Item 1
+	* Item 2
+	* Item 3
+
+
