@@ -16,6 +16,9 @@
 		`nano <filename.txt>`
 	iv. You can display the content of the file using -
 		`cat <filename.txt>`
+8. mv: can be used to rename a file - 
+	`mv [source] [destination]`
+	`eg - mv 'old_name' 'new name'` 
 
 #access your github account remotely
 1. Personal Access Token(PAT): use correct username and password.
