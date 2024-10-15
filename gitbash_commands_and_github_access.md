@@ -7,6 +7,7 @@
 4. **rm**: Remove/delete a file - `rm`
 5. **clear**: Clear all text in terminal window - `clear`
 6. **touch**: Create a new file - `touch <filename.extension>`
+7. Run the following command to view the log and find recently installed packages - `less /var/log/apt/history.log`
 
 ### Write into a file:
 - **echo**: Write a single line.
