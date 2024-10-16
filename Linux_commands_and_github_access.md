@@ -1,5 +1,5 @@
 
-# Some Gitbash (Unix-terminal) Commands
+# Some Linux/Unix-terminal Commands
 
 1. **cd**: Change directory - `cd <directory-name>`
 2. **pwd**: Present working directory - `pwd`
@@ -7,7 +7,16 @@
 4. **rm**: Remove/delete a file - `rm`
 5. **clear**: Clear all text in terminal window - `clear`
 6. **touch**: Create a new file - `touch <filename.extension>`
-7. Run the following command to view the log and find recently installed packages - `less /var/log/apt/history.log`
+
+###  Uninstall Installed Packages
+- Run the following command to view the log and find installed packages:
+  - `less /var/log/apt/history.log`
+- To uninstall a package, use the following command:
+  - `sudo apt remove <package_name>`
+- To completely remove the package, including its configuration files, use:
+  - `sudo apt purge <package_name>`
+- Automatic Removal of Unused Dependencies:
+  - `sudo apt autoremove` 
 
 ### Write into a file:
 - **echo**: Write a single line.
